@@ -13,7 +13,15 @@ function NextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "transparent", right: "20px" }}
+      style={{ ...style, 
+        display: "block", 
+        background: "transparent", 
+        right: "20px", 
+        fontSize: "40px", 
+        width: "40px", 
+        height: "40px",
+        before: ">"
+      }}
       onClick={onClick}
     />
   );
@@ -24,7 +32,11 @@ function PrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "transparent", left: "20px" }}
+      style={{ ...style, 
+        display: "block", 
+        background: "transparent", 
+        left: "20px"
+      }}
       onClick={onClick}
     />
   );
@@ -53,7 +65,7 @@ function Root() {
     customPaging: i => (
       <div
         style={{
-          width: "30px",
+          width: "25px",
           color: "white",
           border: "1px white solid",
         }}
@@ -74,33 +86,48 @@ function Root() {
         </nav>
       <div>
       <Slider {...settings}>
-      <div>
-        <div className='carousel-slide bg-carousel-1 flex'>
-          <div className='carousel-content'>
-            <h1 className='carousel-heading'>The Well, by Northwell Health</h1>
+        <div>
+          <div className='carousel-slide bg-carousel-2'>
+            <div className='carousel-content'>
+              <h1 className='carousel-heading'>Children's Hospital of Philadelphia</h1>
+              <div className='carousel-body'>
+              My role on this project was to reimagine the visual brand, and design a comprehensive and robust design system to be used across the digital experience. Since launch, this new site has helped thousands of people find care and continue their wellness journey. 
+              </div>
+              <div><a href='https://www.chop.edu/' className='carousel-link' target='_blank'>View Site</a></div>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div className='carousel-slide bg-carousel-2 flex'>
-          <div className='carousel-content'>
-            <h1 className='carousel-heading'>Children's Hospital of Philadelphia</h1>
+        <div>
+          <div className='carousel-slide bg-carousel-1'>
+            <div className='carousel-content'>
+              <h1 className='carousel-heading'>The Well, by Northwell Health</h1>
+              <div className='carousel-body'>
+              My role as a UI Designer on this project was to craft a clean, intuitive interface to enhance user engagement and reflect the brand’s focus on holistic well-being. In addition to design, I was part of the development team who built a living design system in the browser. 
+              </div>
+              <div><a href='https://thewell.northwell.edu/' className='carousel-link' target='_blank'>View Site</a></div>
+            </div>
           </div>
         </div>
+        <div>
+          <div className='carousel-slide bg-carousel-3'>
+            <div className='carousel-content'>
+              <h1 className='carousel-heading'>American Physical Society</h1>
+              <div className='carousel-body'>
+              My role as a UI Designer on this project was to design an interface to support their mission of advancing physics within a global community. The design prioritized usability and a modern aesthetic to serve APS’s 50,000 members across academia, industry, and national labs.
+              </div>
+              <div><a href='https://www.aps.org/' className='carousel-link' target='_blank'>View Site</a></div>
+            </div>
+          </div>
+        </div>
+      </Slider>
       </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div>
-    </Slider>
+      <div className='narrative-section'>
+        <div className='narrative-body'>
+          Hello! I'm a creative designer with a development background (this site is built with React), blending visual brand design and technical know-how to create user-centered experiences that are both beautiful and intuitive. I love turning ideas into thoughtful digital solutions that connect with people.
+        </div>
+        <div className='narrative-cta'>
+          <a href='emailto:joey@homegrohn.com' className='primary-link'>Let's connect!</a>
+        </div>
       </div>
     </>
   )

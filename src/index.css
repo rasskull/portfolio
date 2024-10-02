@@ -18,7 +18,13 @@ body {
   @apply border-blue-200 text-blue-200;
 }
 
+.primary-link {
+  @apply inline-block font-thin text-4xl text-blue-400;
+}
 
+.primary-link:hover {
+  @apply text-white underline;
+}
 
 /* Carousel */
 
@@ -26,20 +32,60 @@ body {
   background-color: white;
 }
 
+.slick-next:before {
+  content: url(/carousel-arrow-right.svg) !important;
+  width: 50px;
+  height: 50px;
+}
+
+.slick-prev:before {
+  content: url(/carousel-arrow-left.svg) !important;
+  width: 50px;
+  height: 50px;
+}
+
 .slick-prev {
   z-index: 1;
 }
 
 .carousel-slide {
-  @apply bg-no-repeat bg-cover;
+  @apply flex bg-no-repeat bg-cover;
   min-height: 800px; 
 }
 
 .carousel-content {
-  @apply content-center;
+  @apply content-center px-24 flex-col space-y-4;
   max-width: 700px;
 }
 
 .carousel-heading {
-  @apply content-center px-24 text-8xl font-thin;
+  @apply text-8xl font-thin;
+}
+
+.carousel-body {
+  @apply text-sm text-white font-light tracking-wide leading-6 my-0;
+  max-width: 380px;
+}
+
+.carousel-link {
+  @apply border border-white text-white font-thin tracking-wide text-xl py-3 px-6 my-3 inline-block;
+  
+}
+
+.carousel-link:hover {
+  @apply border-blue-200 text-blue-200;
+}
+
+.narrative-section {
+  @apply flex flex-col my-20 justify-center;
+}
+
+.narrative-body {
+  @apply text-3xl font-thin text-center justify-center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.narrative-cta {
+  @apply text-center py-6;
 }

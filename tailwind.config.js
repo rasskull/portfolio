@@ -54,6 +54,7 @@ export default {
       'gradient-to-tl': 'linear-gradient(to top left, var(--tw-gradient-stops))',
       'carousel-1': 'url("/carousel-thewell.png")',
       'carousel-2': 'url("/carousel-chop.png")',
+      'carousel-3': 'url("/carousel-aps.png")',
     },
     backgroundOpacity: ({ theme }) => theme('opacity'),
     backgroundPosition: {

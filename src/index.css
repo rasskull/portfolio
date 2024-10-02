@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: #111;
+  color: white;
+}
+
+.btn-primary {
+  @apply border border-white text-white font-thin tracking-wide text-xl py-3 px-6 ;
+}
+
+.btn-primary:hover {
+  @apply border-blue-200 text-blue-200;
+}
+
+
+
+/* Carousel */
+
+.slick-dots li button {
+  background-color: white;
+}
+
+.slick-prev {
+  z-index: 1;
+}
+
+.carousel-slide {
+  @apply bg-no-repeat bg-cover;
+  min-height: 800px; 
+}
+
+.carousel-content {
+  @apply content-center;
+  max-width: 700px;
+}
+
+.carousel-heading {
+  @apply content-center px-24 text-8xl font-thin;
+}

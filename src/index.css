@@ -35,8 +35,14 @@ body {
 }
 
 .logo-text {
-  @apply flex-1 content-center px-3 font-thin text-lg;
+  @apply flex-1 flex-nowrap content-center px-3 font-thin text-lg;
+  min-width: 120px;
 }
+
+.tagline {
+  @apply content-center font-light tracking-wider text-gray-200 text-xs px-8;
+}
+
 
 /* Carousel */
 
@@ -115,6 +121,11 @@ body {
   .logo-text {
     @apply text-2xl;
   }
+
+  .tagline {
+    @apply text-base;
+  }
+  
   
   .btn-primary {
     @apply text-xl py-3 px-6 ;

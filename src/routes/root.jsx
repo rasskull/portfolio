@@ -81,7 +81,7 @@ function Root() {
             <div className='mx-auto container flex'>
             <div className='logo'><img src={jgLogo}></img></div>
             <div className='logo-text'>Joey Groh</div>
-            <div className='flex content-center'><button className='btn-primary' src='emailto:joey@homegrohn.com'>Contact Me</button></div>
+            <div className='tagline'>Specializing in UI / Brand / Design Systems</div>
             </div>
         </nav>
       <div>
@@ -126,7 +126,8 @@ function Root() {
           Hello! I'm a creative designer with a development background (this site is built with React), blending visual brand design and technical know-how to create user-centered experiences that are both beautiful and intuitive. I love turning ideas into thoughtful digital solutions that connect with people.
         </div>
         <div className='narrative-cta'>
-          <a href='emailto:joey@homegrohn.com' className='primary-link'>Let's connect!</a>
+          <a href='mailto:joey@homegrohn.com' className='primary-link'>Let's connect!</a>
+          <p className='py-4'>joey@homegrohn.com</p>
         </div>
       </div>
     </>

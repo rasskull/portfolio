@@ -52,9 +52,9 @@ export default {
       'gradient-to-bl': 'linear-gradient(to bottom left, var(--tw-gradient-stops))',
       'gradient-to-l': 'linear-gradient(to left, var(--tw-gradient-stops))',
       'gradient-to-tl': 'linear-gradient(to top left, var(--tw-gradient-stops))',
-      'carousel-1': 'url("/carousel-thewell.png")',
-      'carousel-2': 'url("/carousel-chop.png")',
-      'carousel-3': 'url("/carousel-aps.png")',
+      'carousel-well': 'url("/carousel-thewell.png")',
+      'carousel-chop': 'url("/carousel-chop.png")',
+      'carousel-aps': 'url("/carousel-aps.png")',
     },
     backgroundOpacity: ({ theme }) => theme('opacity'),
     backgroundPosition: {

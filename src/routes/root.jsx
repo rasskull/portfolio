@@ -16,11 +16,9 @@ function NextArrow(props) {
       style={{ ...style, 
         display: "block", 
         background: "transparent", 
-        right: "20px", 
-        fontSize: "40px", 
+        right: "6px", 
         width: "40px", 
         height: "40px",
-        before: ">"
       }}
       onClick={onClick}
     />
@@ -35,7 +33,9 @@ function PrevArrow(props) {
       style={{ ...style, 
         display: "block", 
         background: "transparent", 
-        left: "20px"
+        left: "20px",
+        width: "40px", 
+        height: "40px"
       }}
       onClick={onClick}
     />
@@ -77,17 +77,17 @@ function Root() {
 
   return (
     <>
-      <nav className='header py-8'>
+      <nav className='header'>
             <div className='mx-auto container flex'>
-            <div className='flex-none content-center w-10'><img src={jgLogo}></img></div>
-            <div className='flex-1 content-center px-4 font-thin text-2xl'>Joey Groh</div>
+            <div className='logo'><img src={jgLogo}></img></div>
+            <div className='logo-text'>Joey Groh</div>
             <div className='flex content-center'><button className='btn-primary' src='emailto:joey@homegrohn.com'>Contact Me</button></div>
             </div>
         </nav>
       <div>
       <Slider {...settings}>
         <div>
-          <div className='carousel-slide bg-carousel-2'>
+          <div className='carousel-slide carousel-chop'>
             <div className='carousel-content'>
               <h1 className='carousel-heading'>Children's Hospital of Philadelphia</h1>
               <div className='carousel-body'>
@@ -98,7 +98,7 @@ function Root() {
           </div>
         </div>
         <div>
-          <div className='carousel-slide bg-carousel-1'>
+          <div className='carousel-slide carousel-well'>
             <div className='carousel-content'>
               <h1 className='carousel-heading'>The Well, by Northwell Health</h1>
               <div className='carousel-body'>
@@ -109,7 +109,7 @@ function Root() {
           </div>
         </div>
         <div>
-          <div className='carousel-slide bg-carousel-3'>
+          <div className='carousel-slide carousel-aps'>
             <div className='carousel-content'>
               <h1 className='carousel-heading'>American Physical Society</h1>
               <div className='carousel-body'>
